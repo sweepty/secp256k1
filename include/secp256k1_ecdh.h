@@ -33,6 +33,10 @@ SECP256K1_API extern const secp256k1_ecdh_hash_function secp256k1_ecdh_hash_func
  * Populates the output parameter with 32 bytes. */
 SECP256K1_API extern const secp256k1_ecdh_hash_function secp256k1_ecdh_hash_function_default;
 
+/** A option does not hash.
+ * Return the output parameter to x32. */
+SECP256K1_API extern const secp256k1_ecdh_hash_function secp256k1_ecdh_hash_function_none;
+
 /** Compute an EC Diffie-Hellman secret in constant time
  *
  *  Returns: 1: exponentiation was successful
